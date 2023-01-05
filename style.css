@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik';
+    font-weight: 300;
+    text-transform: capitalize;
+    background-color:  hsl(226, 43%, 10%);
+    color: #fff;
+}
+
+h1 {
+    font-size: 3.25rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: hsl(236, 100%, 87%);
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.profile-card {
+    width: 16rem;
+    background-color: hsl(235, 46%, 20%);
+    grid-row: 1 / 3;
+    border-radius: 1rem;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 1rem;
+    width: 100%;
+    height: 23.4375rem;
+    padding: 2.25rem 2rem;
+}
+
+.profile-header img {
+    width: 6rem;
+    height: 6rem;
+    border: 0.25rem solid #fff;
+    border-radius: 50%;
+}
+
+.profile-card .profile-content {
+    height: calc(34rem - 23.4375rem);
+}
+
+.profile-card .profile-header .user-information p.report {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(236, 100%, 87%);
+    margin-top: 2.5rem;
+}
+
+.profile-card .profile-content {
+    display: grid;
+    align-content: center;
+    gap: 1.5rem;
+    padding-left: 2rem;
+} 
+
+.profile-card .profile-content h4 {
+    transition: all calc(0.5s / 3);
+    cursor: pointer;
+}
+
+.profile-card .profile-content h4:hover {
+    font-weight: 500;
+    color: #fff;
+}
+
+.card {
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 1rem;
+}
+
+.work.card {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play.card {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study.card {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise.card {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social.card {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.self-care.card {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.card .header {
+    border-radius: 1rem;
+    height: 3rem;
+}
+
+.card .header img {
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    right: 1rem;
+    top: 0;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1.5rem;
+    position: absolute;
+    background-color:  hsl(236, 45%, 20%);
+    width: 100%;
+    height: calc(16rem - 3rem);
+    border-radius: 1rem 1rem 1rem 1rem;
+    top: 3rem;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card .content:hover {
+    background-color: hsl(235, 45%, 61%);
+} 
+
+.card .content .content-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.card .content .content-header img {
+    width: 1.3rem;
+    height: 0.3rem;
+    transition: all 0.5s;
+}
+
+.card .content .content-card h1 {
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 568px) and (max-width: 1225px) {
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 100%;
+        background-color: hsl(235, 46%, 20%);
+        grid-area: 1 / 1 / 1 / 3;
+        border-radius: 1rem;
+    }
+
+} 
+
+@media screen and (min-width: 280px) and (max-width: 568px) {
+
+    main {
+        padding: 3rem 0;
+    }
+
+    .dashboard {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .profile-card {
+        width: 100%;
+        height: 16rem;
+    }
+
+    .profile-header {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        height: 10rem;
+    }
+
+    .profile-header h2 {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .profile-header img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .profile-card .profile-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: calc(256px - 10rem);
+        gap: 0;
+        padding: 0;
+    }
+
+    .profile-card .profile-header .user-information {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .profile-card .profile-header .user-information p.report {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+} 
