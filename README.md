@@ -34,11 +34,11 @@
 <p id="project"> O "Time tracking" é um desafio proposto pelo Front-end Mentor cujo objetivo é simplesmente treinar e evoluir suas habilidades com o display grid em CSS. Veja na imagem o desafio proposto. </p>
 
 <p align="center">
-  <img alt="rocketpay" src="instructions_challenge/desktop-design.jpg" width="100%">
+  <img alt="rocketpay" src="assets/images/desktop-design.jpg" width="100%">
 </p>
 
 <p align="center">
-  <a href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw"> Tente você realizar o desafio, cliquei aqui! </a>
+  <a href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw" target="_blank"> Tente você realizar o desafio, cliquei aqui! </a>
 </p>
 
 ## 🗺️ Orientações
